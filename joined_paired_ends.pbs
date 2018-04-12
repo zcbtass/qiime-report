@@ -11,5 +11,5 @@ time join_paired_ends.py \
 -r ~2018_02_smb/Read2.fastq.gz \
 -b ~2018_02_smb/Index.fastq.gz \
 -o ~2018_02_smb/SeqPrep_JoinedData \
--m SeqPrep \
+-m SeqPrep
 source deactivate
