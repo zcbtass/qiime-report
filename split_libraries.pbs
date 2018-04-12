@@ -11,8 +11,8 @@ source activate qiime1
 
 time split_libraries_fastq.py \
 -m  \
--i ~/2018_02_smb/Read1.fastq.gz \
--b ~/2018_02_smb/Index.fastq.gz \
+-i ~/2018_02_smb/SeqPrep_joined/seqprep_assembled.fastq.gz \
+-b ~/2018_02_smb/SeqPrep_joined/seqprep_assembled.fastq_barcodes.fastq \
 -o ~/2018_02_smb/split_library/ \
 -q 19 \
 --barcode_type 
