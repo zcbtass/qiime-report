@@ -3,18 +3,11 @@
 #PBS -l select=1:ncpus=2
 #PBS -N 2018_joined_paired_ends
 #PBS -A d411-training
-
 cd $PBS_O_WORKDIR
-
 module load miniconda/python2
-
 export TMPDIR=~/qiime_tmp
-
 echo "loading virtualenv"
-
 source activate qiime1
-
 join_paired_ends.py \
 -m SeqPrep -f ~/2018_02_smb/Read1.fastq.gz -r ~/2018_02_smb/Read2.fastq.gz -b ~/2018_02_smb/Index.fastq.gz -o ~/2018_02_smb/SeqPrep_joined
-
 source deactivate
