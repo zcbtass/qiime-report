@@ -12,10 +12,6 @@ export TMPDIR=~/qiime_tmp
 
 source activate qiime1
 
-time join_paired_ends.py \
--f ~2018_02_smb/Read1.fastq.gz \
--r ~2018_02_smb/Read2.fastq.gz \
--b ~2018_02_smb/Index.fastq.gz \
--o ~2018_02_smb/SeqPrep_JoinedData \
--m SeqPrep
+time join_paired_ends.py -f ~2018_02_smb/Read1.fastq.gz -r ~2018_02_smb/Read2.fastq.gz -b ~2018_02_smb/Index.fastq.gz -o ~2018_02_smb/SeqPrep_JoinedData -m SeqPrep
+
 source deactivate
