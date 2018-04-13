@@ -17,3 +17,4 @@ time split_libraries_fastq.py \
 -q 19 \
 --rev_comp_barcode --rev_comp_mapping_barcodes
 
+source deactivate
