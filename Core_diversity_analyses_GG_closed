@@ -11,7 +11,7 @@ source activate qiime1
 
 core_diversity_analyses.py \
 -i ~/2018_02_smb/deNovo/otu_table.biom \
--o ~/2018_02_smb/CoreAnalyses \
+-o ~/2018_02_smb/GG_CoreAnalyses \
 -m ~/2018_02_smb/map.tsv \
 -e 605 \
 -t ~/2018_02_smb/closed/97_otus.tree \
