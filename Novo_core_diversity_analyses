@@ -13,7 +13,7 @@ core_diversity_analyses.py \
 -i ~/2018_02_smb/deNovo/otu_table.biom \
 -o ~/2018_02_smb/OpenCoreAnalyses \
 -m ~/2018_02_smb/map.tsv \
--t ~/2018_02_smb/deNovo/rep_set.tre\
+-t ~/2018_02_smb/deNovo/rep_set.tre \
 -e 765 \
 -O 9 \
 -a
