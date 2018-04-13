@@ -13,7 +13,7 @@ core_diversity_analyses.py \
 -i ~/2018_02_smb/ \
 -o ~/2018_02_smb/CoreAnalyses \
 -m ~/2018_02_smb/map.tsv \
--e 1000 \
+-e 765 \
 -O 12 \
 -a \
 --nonphylogenetic_diversity
