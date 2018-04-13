@@ -1,6 +1,6 @@
 #!/bin/bash --login
 #PBS -l walltime=03:00:00
-#PBS -l select=1:ncpus=36
+#PBS -l select=1:ncpus=56
 #PBS -N Open_GG_Core_diversity_analyses
 #PBS -A d411-training
 cd $PBS_O_WORKDIR
@@ -9,11 +9,13 @@ export TMPDIR=~/qiime_tmp
 echo "loading virtualenv"
 source activate qiime1
 
-core_diversity_analyses.py \
+time core_diversity_analyses.py \
 -i ~/2018_02_smb/open/otu_table_mc2_w_tax_no_pynast_failures.biom \
 -o ~/2018_02_smb/Open_GG_CoreAnalyses \
 -m ~/2018_02_smb/map.tsv \
 -e 747 \
 -t ~/2018_02_smb/open/rep_set.tre \
--O 9 \
+-O 14 \
 -a
+
+source deactivate
