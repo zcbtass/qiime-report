@@ -9,9 +9,9 @@ export TMPDIR=~/qiime_tmp
 echo "loading virtualenv"
 source activate qiime1
 
-time pick_de_novo_otus.py \
+time pick_closed_reference_otus.py \
 -i ~/2018_02_smb/split_library/seqs.fna \
--o ~/2018_02_smb/deNovo \
+-o ~/2018_02_smb/closed \
 -r ~/SILVA_128_QIIME_release/trees/97/97_otus.tre \                \
 -O 3 \
 -a
