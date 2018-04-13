@@ -1,5 +1,5 @@
 #!/bin/bash --login
-#PBS -l walltime=03:00:00
+#PBS -l walltime=09:00:00
 #PBS -l select=1:ncpus=56
 #PBS -N Open_GG_Core_diversity_analyses
 #PBS -A d411-training
