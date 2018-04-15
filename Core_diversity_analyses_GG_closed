@@ -10,7 +10,7 @@ echo "loading virtualenv"
 source activate qiime1
 
 time core_diversity_analyses.py \
--i ~/2018_02_smb/deNovo/otu_table.biom \
+-i ~/2018_02_smb/closed/otu_table.biom \
 -o ~/2018_02_smb/GG_CoreAnalyses \
 -m ~/2018_02_smb/map.tsv \
 -e 605 \
