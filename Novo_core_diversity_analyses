@@ -1,7 +1,7 @@
 #!/bin/bash --login
-#PBS -l walltime=09:00:00
-#PBS -l select=1:ncpus=56
-#PBS -N Novo_Core_diversity_analyses
+#PBS -l walltime=02:00:00
+#PBS -l select=1:ncpus=2
+#PBS -N DeNovo_Core_diversity_analyses
 #PBS -A d411-training
 cd $PBS_O_WORKDIR
 module load miniconda/python2
@@ -11,11 +11,10 @@ source activate qiime1
 
 time core_diversity_analyses.py \
 -i ~/2018_02_smb/deNovo/otu_table.biom \
--o ~/2018_02_smb/DeNovoCoreAnalyses \
+-o ~/2018_02_smb/DeNovo_CoreDiv \
 -m ~/2018_02_smb/map.tsv \
--t ~/2018_02_smb/deNovo/rep_set.tre \
 -e 765 \
--O 14 \
--a
+-t ~/2018_02_smb/deNovo/rep_set.tre \
+--recover_from_failure
 
 source deactivate
