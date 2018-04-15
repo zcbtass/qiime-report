@@ -14,6 +14,7 @@ time core_diversity_analyses.py \
 -o ~/2018_02_smb/GG_CoreAnalyses \
 -m ~/2018_02_smb/map.tsv \
 -e 605 \
--t ~/2018_02_smb/closed/97_otus.tree
+-t ~/2018_02_smb/closed/97_otus.tree \
+--recover_from_failure
 
 source deactivate
