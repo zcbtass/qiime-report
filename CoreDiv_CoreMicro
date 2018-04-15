@@ -11,7 +11,7 @@ source activate qiime1
 
 time core_diversity_analyses.py \
 -i ~/core_microbiome/core_table_100.biom \
--o ~/2018_02_smb/CoreMicrobiome_CoreDiv \
+-o ~/CoreMicrobiome_CoreDiv \
 -m ~/2018_02_smb/map.tsv \
 -e 765 \
 -t ~/2018_02_smb/deNovo/rep_set.tre \
