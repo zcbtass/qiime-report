@@ -1,0 +1,18 @@
+#!/bin/bash --login
+#PBS -l walltime=02:00:00
+#PBS -l select=1:ncpus=2
+#PBS -N Heat_Map
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+module load miniconda/python2
+export TMPDIR=~/qiime_tmp
+echo "loading virtualenv"
+source activate qiime1
+
+time make_otu_heatmap.py \
+-i ~/core_microbiome/core_table_100.biom \
+-o ~/CoreMicrobiome_HeatMap \
+-m ~/2018_02_smb/map.tsv \
+-t ~/2018_02_smb/deNovo/rep_set.tre
+
+source deactivate
