@@ -12,7 +12,7 @@ source activate qiime1
 time group_significance.py \
 -i ~/core_microbiome/core_table_100.biom \
 -m ~/2018_02_smb/map.tsv \
--c SampleID \
--o ~/GrSig_SampleID_core \
+-c Description \
+-o ~/GrSig_Team_core \
 -s kruskal_wallis \
 --permutations 765
