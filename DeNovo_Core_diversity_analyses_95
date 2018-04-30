@@ -1,0 +1,20 @@
+#!/bin/bash --login
+#PBS -l walltime=02:00:00
+#PBS -l select=1:ncpus=2
+#PBS -N DeNovo_Core_diversity_analyses_95
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+module load miniconda/python2
+export TMPDIR=~/qiime_tmp
+echo "loading virtualenv"
+source activate qiime1
+
+time core_diversity_analyses.py \
+-i ~/core_microbiome/core_table_95.biom \
+-o ~/CoreMicrobiome_CoreDiv_95 \
+-m ~/2018_02_smb/map.tsv \
+-e 555 \
+-t ~/2018_02_smb/deNovo/rep_set.tre \
+--recover_from_failure
+
+source deactivate
